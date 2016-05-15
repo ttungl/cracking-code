@@ -53,7 +53,6 @@ class Aaagmnrs
 	ArrayList<String> uniqueList = new ArrayList<String>();
 	ArrayList<String> uniqueListcheck = new ArrayList<String>();
 	int strlen = strlist.length;
-	int counter=0;
 	boolean checkPointAnagram;
 		for (int i=0; i<strlen-1; i++){
 		    for (int j=i+1; j<strlen; j++){
