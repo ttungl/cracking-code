@@ -80,15 +80,15 @@ class Aaagmnrs
 		        } 
 		    }
 		}
-	System.out.println("Unique list: "+uniqueList);
+	        System.out.println("Unique list: "+uniqueList);
 	}
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		String [] strs = { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote"};
-    String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
-    String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
-    anagrams(strs);
-    anagrams(strs1);
-    anagrams(strs2);
+	    String [] strs = { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote"};
+	    String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
+	    String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
+	    anagrams(strs);
+	    anagrams(strs1);
+	    anagrams(strs2);
 	}
 }
