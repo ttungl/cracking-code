@@ -7,7 +7,7 @@
 // Output: { "Aaagmnrs", "TopCoder" }
 
 import java.util.*;
-class Ideone
+class Aaagmnrs
 {
 	public static boolean permut(String s1, String s2){
  
@@ -50,7 +50,7 @@ class Ideone
         return true;
     }   
  
-    public static void Print_Unique_Anagrams(String [] strlist){
+    public static void anagrams(String [] strlist){
         ArrayList<String> uniqueList = new ArrayList<String>();
         ArrayList<String> uniqueListcheck = new ArrayList<String>();
         int strlen = strlist.length;
@@ -89,8 +89,8 @@ class Ideone
 		String [] strs = { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote"};
 	        String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
 	        String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
-	        Print_Unique_Anagrams(strs);
-	        Print_Unique_Anagrams(strs1);
-	        Print_Unique_Anagrams(strs2);
+	        anagrams(strs);
+	        anagrams(strs1);
+	        anagrams(strs2);
 	}
 }
