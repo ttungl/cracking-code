@@ -10,9 +10,8 @@ import java.util.*;
 class Aaagmnrs
 {
 	public static boolean permut(String s1, String s2){
-	
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-		
+	
 		if(s1==null||s2==null){
 		    return false;
 		}
@@ -56,31 +55,31 @@ class Aaagmnrs
 	int strlen = strlist.length;
 	int counter=0;
 	boolean checkPointAnagram;
-	for (int i=0; i<strlen-1; i++){
-	    for (int j=i+1; j<strlen; j++){
-	        String str11 = strlist[i].replaceAll("\\s+","");    // space-free strings
-	        String str21 = strlist[j].replaceAll("\\s+",""); 
-	        String s1 = str11.toLowerCase();                    // uppercase-free strings
-	        String s2 = str21.toLowerCase();
-	
-	        checkPointAnagram = permut(s1, s2);
-	        if (checkPointAnagram == true){
-	            if (!uniqueListcheck.isEmpty())
-	            {
-	                for (String eachOne : uniqueListcheck){                            
-	                    boolean checkunique = permut(s1, eachOne); 
-	                    if (!s1.equals(eachOne) && (checkunique==false)){
-	                        uniqueList.add(strlist[i]);
-	                    } 
-	                }
-	
-	            } else {
-	                uniqueListcheck.add(s1);
-	                uniqueList.add(strlist[i]);
-	            }
-	        } 
-	    }
-	}
+		for (int i=0; i<strlen-1; i++){
+		    for (int j=i+1; j<strlen; j++){
+		        String str11 = strlist[i].replaceAll("\\s+","");    // space-free strings
+		        String str21 = strlist[j].replaceAll("\\s+",""); 
+		        String s1 = str11.toLowerCase();                    // uppercase-free strings
+		        String s2 = str21.toLowerCase();
+		
+		        checkPointAnagram = permut(s1, s2);
+		        if (checkPointAnagram == true){
+		            if (!uniqueListcheck.isEmpty())
+		            {
+		                for (String eachOne : uniqueListcheck){                            
+		                    boolean checkunique = permut(s1, eachOne); 
+		                    if (!s1.equals(eachOne) && (checkunique==false)){
+		                        uniqueList.add(strlist[i]);
+		                    } 
+		                }
+		
+		            } else {
+		                uniqueListcheck.add(s1);
+		                uniqueList.add(strlist[i]);
+		            }
+		        } 
+		    }
+		}
 	System.out.println("Unique list: "+uniqueList);
 	}
 	public static void main (String[] args) throws java.lang.Exception
