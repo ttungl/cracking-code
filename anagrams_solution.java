@@ -85,10 +85,10 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		String [] strs = { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote"};
-        String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
-        String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
-        Print_Unique_Anagrams(strs);
-        Print_Unique_Anagrams(strs1);
-        Print_Unique_Anagrams(strs2);
+	        String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
+	        String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
+	        Print_Unique_Anagrams(strs);
+	        Print_Unique_Anagrams(strs1);
+	        Print_Unique_Anagrams(strs2);
 	}
 }
