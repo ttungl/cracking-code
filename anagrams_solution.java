@@ -46,7 +46,7 @@ class Aaagmnrs
 		    }
 		}
 	
-	return true;
+	        return true;
 	}   
  
 	public static void anagrams(String [] strlist){
