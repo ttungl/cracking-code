@@ -11,41 +11,41 @@ class Aaagmnrs
 {
 	public static boolean permut(String s1, String s2){
 	
-	HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-	
-	if(s1==null||s2==null){
-	    return false;
-	}
-	
-	if (s1.length()!=s2.length())
-	{
-	    return false;
-	}
-	
-	for (int i=0; i<s1.length(); i++)
-	{
-	    int count = 1;
-	    char c = s1.charAt(i);
-	    if (map.containsKey(c)){
-	        int k = map.get(c); // get value
-	        count += k;
-	    }    
-	    map.put(c, count);
-	}
-	
-	for(int i=0; i<s2.length(); i++){
-	    char c = s2.charAt(i);
-	    if (!map.containsKey(c)){
-	        return false;
-	    }
-	
-	    int count = map.get(c);
-	    if (count==1){
-	        map.remove(c);
-	    } else {
-	        map.put(c,--count);
-	    }
-	}
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		
+		if(s1==null||s2==null){
+		    return false;
+		}
+		
+		if (s1.length()!=s2.length())
+		{
+		    return false;
+		}
+		
+		for (int i=0; i<s1.length(); i++)
+		{
+		    int count = 1;
+		    char c = s1.charAt(i);
+		    if (map.containsKey(c)){
+		        int k = map.get(c); // get value
+		        count += k;
+		    }    
+		    map.put(c, count);
+		}
+		
+		for(int i=0; i<s2.length(); i++){
+		    char c = s2.charAt(i);
+		    if (!map.containsKey(c)){
+		        return false;
+		    }
+		
+		    int count = map.get(c);
+		    if (count==1){
+		        map.remove(c);
+		    } else {
+		        map.put(c,--count);
+		    }
+		}
 	
 	return true;
 	}   
@@ -58,7 +58,6 @@ class Aaagmnrs
 	boolean checkPointAnagram;
 	for (int i=0; i<strlen-1; i++){
 	    for (int j=i+1; j<strlen; j++){
-	        counter++;
 	        String str11 = strlist[i].replaceAll("\\s+","");    // space-free strings
 	        String str21 = strlist[j].replaceAll("\\s+",""); 
 	        String s1 = str11.toLowerCase();                    // uppercase-free strings
@@ -87,10 +86,10 @@ class Aaagmnrs
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		String [] strs = { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote"};
-	        String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
-	        String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
-	        anagrams(strs);
-	        anagrams(strs1);
-	        anagrams(strs2);
+    String [] strs1 = { "SnapDragon vs tomek", "savants groped monk", "Adam vents prongs ok" };
+    String [] strs2 = { "Radar ghost jilts Kim", "patched hers first", "DEPTH FIRST SEARCH", "DIJKSTRAS ALGORITHM" };
+    anagrams(strs);
+    anagrams(strs1);
+    anagrams(strs2);
 	}
 }
