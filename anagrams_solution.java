@@ -2,7 +2,7 @@
 // Author: Tung Thanh Le
 // Email: ttungl at gmail
 // Date: May 15, 2016
-// Description: Anagram analysis
+// Description: Anagram filtering
 // Input: { "Aaagmnrs", "TopCoder", "anagrams", "Drop Cote" }
 // Output: { "Aaagmnrs", "TopCoder" }
 
