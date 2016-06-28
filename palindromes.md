@@ -1,7 +1,7 @@
 Palindrome problem
 ### Usage:
 ##### Input: 
-###### ['101', 'mom', 'mommy', '1011']
+###### ['101', 'ihhi', 'hihi', '1011']
 ##### Output: 
 ###### [Palindrome, Palindrome, NotPalindrome, NotPalindrome]
 ##### Description: 
