@@ -1,5 +1,5 @@
-# Palindrome problem
-#### Usage:
+Palindrome problem
+### Usage:
 ##### Input: 
 ###### ['101','mom','mommy','1011']
 ##### Output: 
